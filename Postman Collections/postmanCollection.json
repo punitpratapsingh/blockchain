@@ -1,0 +1,2804 @@
+{
+	"info": {
+		"_postman_id": "a95a092a-df71-4f67-86d2-b6a289c605e0",
+		"name": "BGT-staking-backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "register",
+					"item": [
+						{
+							"name": "/register",
+							"id": "ca9be060-fc4b-4e13-909b-6c798f867132",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "bgtron",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "harshad.r.k.100@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123123",
+											"type": "text"
+										},
+										{
+											"key": "referral",
+											"value": "MGZO7GX5",
+											"type": "text"
+										},
+										{
+											"key": "fromUserView",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": "{{local}}user/auth/register"
+							},
+							"response": [
+								{
+									"id": "632a44f6-2540-4c96-90f2-a8de4935d800",
+									"name": "/register",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "Harrshad",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "harshad@roundtechsquare.com",
+													"type": "text"
+												},
+												{
+													"key": "mobile",
+													"value": "+91135233925",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "12345",
+													"type": "text"
+												},
+												{
+													"key": "password_confirmation",
+													"value": "12345",
+													"type": "text"
+												},
+												{
+													"key": "referral",
+													"value": "DV2NOA",
+													"type": "text",
+													"disabled": true
+												}
+											]
+										},
+										"url": "{{local}}/auth/register"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "authorization",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJ0d29GYWN0b3JBdXRoZW50aWNhdGlvbiI6dHJ1ZSwiaXNFbWFpbFZlcmlmaWVkIjpmYWxzZSwiaXNNb2JpbGVWZXJpZmllZCI6ZmFsc2UsImlzRGVsZXRlZCI6ZmFsc2UsImF1dGhlbnRpY2F0b3JWZXJpZmllZCI6ZmFsc2UsIl9pZCI6IjYxNGY1OGY5ZGIzMmJhMTY1OWY1MmE4NSIsIm5hbWUiOiJIYXJyc2hhZCIsImVtYWlsIjoiaGFyc2hhZEByb3VuZHRlY2hzcXVhcmUuY29tIiwibW9iaWxlIjoiKzkxMTM1MjMzOTI1IiwicGFzc3dvcmQiOiIkMmIkMTAkZ0hQVDFqSGx6NUUvbXV5QUxiN2FITzdEWkt6YVJ2djhlSkluQUZQTGJIQi44azdKbzFXbEciLCJjcmVhdGVkQXQiOiIyMDIxLTA5LTI1VDE3OjE0OjMzLjE5OFoiLCJ1cGRhdGVkQXQiOiIyMDIxLTA5LTI1VDE3OjE0OjMzLjE5OFoiLCJfX3YiOjB9.imRcvbQApaMvRnzEMtQAV3ju03y5PbFw28iiELZAWBc"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "459"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1cb-ZTGaQMSHNzI9K6TWEjuAu9Do9cE\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 25 Sep 2021 17:14:36 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"status\": true,\n    \"message\": \"Register successfully\",\n    \"data\": {\n        \"twoFactorAuthentication\": true,\n        \"isEmailVerified\": false,\n        \"isMobileVerified\": false,\n        \"isDeleted\": false,\n        \"authenticatorVerified\": false,\n        \"_id\": \"614f58f9db32ba1659f52a85\",\n        \"name\": \"Harrshad\",\n        \"email\": \"harshad@roundtechsquare.com\",\n        \"mobile\": \"+91135233925\",\n        \"password\": \"$2b$10$gHPT1jHlz5E/muyALb7aHO7DZKzaRvv8eJInAFPLbHB.8k7Jo1WlG\",\n        \"createdAt\": \"2021-09-25T17:14:33.198Z\",\n        \"updatedAt\": \"2021-09-25T17:14:33.198Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "/verify/email/resend",
+							"id": "9daa0b6f-207c-4477-ae69-12c23382b840",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "harshad@mailinator.com",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{local}}user/auth/verify/email/resend"
+							},
+							"response": []
+						},
+						{
+							"name": "/verify/email",
+							"id": "dbb68282-8a50-4e49-b773-ba790cd0b8c8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "code",
+											"value": "675213",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{local}}/auth/verify/email"
+							},
+							"response": [
+								{
+									"id": "4f0140e5-7a91-4641-ad23-b46fde3c8fda",
+									"name": "/verify/email",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "eyJhbGciOiJIUzI1NiJ9.eyJ0d29GYWN0b3JBdXRoZW50aWNhdGlvbiI6dHJ1ZSwiaXNFbWFpbFZlcmlmaWVkIjpmYWxzZSwiaXNNb2JpbGVWZXJpZmllZCI6ZmFsc2UsImlzRGVsZXRlZCI6ZmFsc2UsImF1dGhlbnRpY2F0b3JWZXJpZmllZCI6ZmFsc2UsIl9pZCI6IjYxNTA2MjdjNTViNTY2OWVkZjkyNzM1OCIsIm5hbWUiOiJIYXJyc2hhZCIsImVtYWlsIjoiaGFyc2hhZEByb3VuZHRlY2hzcXVhcmUuY29tIiwibW9iaWxlIjoiKzkxOTgyNDIwNTMzOSIsInBhc3N3b3JkIjoiJDJiJDEwJEpsa1FYREhpb1NHVkJtc25oZXV2dHU5NkpuVkFIa2ZMRHlEV2czbTFPOG85M3M1SmMwd05xIiwiY3JlYXRlZEF0IjoiMjAyMS0wOS0yNlQxMjowNzoyNC4xMTdaIiwidXBkYXRlZEF0IjoiMjAyMS0wOS0yNlQxMjowNzoyNC4xMTdaIiwiX192IjowfQ.-Ya0qAT_S_LVJSAGasqXUO_2g8k5U6GIiSFF_t1JpWU",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "code",
+													"value": "675213",
+													"type": "text"
+												}
+											]
+										},
+										"url": "{{local}}/auth/verify/email"
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "56"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"38-JA0zoxyBS+ISPuv7vkHcoo4ZY+Y\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 26 Sep 2021 12:08:24 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"status\": false,\n    \"message\": \"Enter Valid OTP\",\n    \"data\": null\n}"
+								}
+							]
+						}
+					],
+					"id": "0d0439fb-3c9f-47df-bd70-063d520ea2bb"
+				},
+				{
+					"name": "/login",
+					"id": "741cfaf6-c869-401c-a3d9-3b3acadcc09e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "userName",
+									"value": "bgtronsocial@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Bgtron@123",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{local}}user/auth/login"
+					},
+					"response": [
+						{
+							"id": "d74e574b-2953-44c9-9ba4-da7516588399",
+							"name": "/login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "userName",
+											"value": "harshad@roundtechsquare.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{local}}/auth/login"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "authorization",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ0d29GYWN0b3JBdXRoZW50aWNhdGlvbiI6dHJ1ZSwiaXNFbWFpbFZlcmlmaWVkIjpmYWxzZSwiaXNNb2JpbGVWZXJpZmllZCI6ZmFsc2UsImlzRGVsZXRlZCI6ZmFsc2UsImF1dGhlbnRpY2F0b3JWZXJpZmllZCI6ZmFsc2UsIl9pZCI6IjYxNGY0MGIxZmNmZDg5YjU3ZGM1MWNmZSIsIm5hbWUiOiJIYXJyc2hhZCIsImVtYWlsIjoiaGFyc2hhZEByb3VuZHRlY2hzcXVhcmUuY29tIiwibW9iaWxlIjoiKzkxMTM1MjMzOTI1IiwicGFzc3dvcmQiOiIkMmIkMTAkWGwzRFdZMjN3UjZLNmsxdTNISTcwLkpVeWhqR3pxOVJGWkt5aDNUdUZXRnh2b0Q3aktYSmEiLCJjcmVhdGVkQXQiOiIyMDIxLTA5LTI1VDE1OjMwOjU3LjM3NloiLCJ1cGRhdGVkQXQiOiIyMDIxLTA5LTI1VDE1OjMwOjU3LjM3NloiLCJfX3YiOjB9.YFvoJynOms1mMzer1P8L8CfCqq9_VA9PAnV02kI0lkw"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "456"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1c8-ZLJsDFV//mSo+TqEL5L++sInkAk\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Sep 2021 17:11:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"status\": true,\n    \"message\": \"Login successfully\",\n    \"data\": {\n        \"twoFactorAuthentication\": true,\n        \"isEmailVerified\": false,\n        \"isMobileVerified\": false,\n        \"isDeleted\": false,\n        \"authenticatorVerified\": false,\n        \"_id\": \"614f40b1fcfd89b57dc51cfe\",\n        \"name\": \"Harrshad\",\n        \"email\": \"harshad@roundtechsquare.com\",\n        \"mobile\": \"+91135233925\",\n        \"password\": \"$2b$10$Xl3DWY23wR6K6k1u3HI70.JUyhjGzq9RFZKyh3TuFWFxvoD7jKXJa\",\n        \"createdAt\": \"2021-09-25T15:30:57.376Z\",\n        \"updatedAt\": \"2021-09-25T15:30:57.376Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "/mobile/resend",
+					"id": "f0b40b20-59ce-4a89-ac01-eebc388885e0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mobile",
+									"value": "+918758899701",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{local}}user/auth/mobile/resend"
+					},
+					"response": []
+				},
+				{
+					"name": "/mobile/verify",
+					"id": "94f707dc-438e-4ffa-92b9-a540d109c097",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mobile",
+									"value": "+919913523827",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "389080",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{local}}/auth/mobile/verify"
+					},
+					"response": []
+				},
+				{
+					"name": "/email/verify",
+					"id": "d035763e-6568-4483-8ab9-24c1920c09ff",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "harshad.r.k.100@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "195722",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{local}}/auth/email/verify"
+					},
+					"response": []
+				},
+				{
+					"name": "/email/resend",
+					"id": "dc954015-576a-4f16-8b6d-26941eb6cacd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "harshad.r.k.100@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "ALL",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{local}}user/auth/email/resend"
+					},
+					"response": []
+				},
+				{
+					"name": "/password",
+					"id": "1834a7c4-3d3f-4318-9277-af8751837cc8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI2MjI4YmRmZjljYTFiMGFjZjIwYjkzMjYiLCJuYW1lIjoiRHhiNTk5OSAiLCJ1c2VySWQiOiJZV3FaWSIsImVtYWlsIjoiZGVzdXJpMTk4NEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRwR09YMENnN0czbEJFcFNLSG1LUEJlWmNuOU5OU2lSSHNwLkNUSXVMRU5URExONTREcFBYTyIsImlzU2V0VHhQYXNzd29yZCI6ZmFsc2UsInR3b0ZhY3RvckF1dGhlbnRpY2F0aW9uIjp0cnVlLCJpc0VtYWlsVmVyaWZpZWQiOmZhbHNlLCJpc1N1YnNjcmliZWQiOmZhbHNlLCJpc0NyZWF0ZUNpcmNsZSI6dHJ1ZSwiZnJlZVRyaWFsIjpmYWxzZSwiZnJlZVRyaWFsRW5kIjowLCJpc0RlbGV0ZWQiOmZhbHNlLCJhdXRoZW50aWNhdG9yVmVyaWZpZWQiOmZhbHNlLCJjcmVhdGVkQXQiOiIyMDIyLTAzLTA5VDE0OjQ3OjI3Ljg4MloiLCJ1cGRhdGVkQXQiOiIyMDIyLTAzLTEwVDA1OjEyOjU3LjkzNFoiLCJfX3YiOjB9.NZFcj1nNMBtnjrJHsvePm5nxBthTKVVl8IuCgySbDU0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "oldPassword",
+									"value": "hello123",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Pune@123123",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{userLive}}/auth/password"
+					},
+					"response": []
+				},
+				{
+					"name": "/forgot/password",
+					"id": "9563c650-69e4-4702-b56e-c241e9b74a79",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "userName",
+									"value": "ssdarsh630@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "darshdrh123",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{local}}/auth/forgot/password"
+					},
+					"response": []
+				},
+				{
+					"name": "/check-token",
+					"id": "31228f5d-43d6-45bb-bbe6-ef0bba67c8a5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{local}}/auth/check-token"
+					},
+					"response": []
+				}
+			],
+			"id": "04b04d0a-13a4-4bcb-a4c7-91baf6fcf91c"
+		},
+		{
+			"name": "profile",
+			"item": [
+				{
+					"name": "referral",
+					"item": [
+						{
+							"name": "/user/referral",
+							"id": "67476e05-ee25-45ef-9ec6-1d3a89b3fad8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": "{{live}}user/profile/referral/tree"
+							},
+							"response": [
+								{
+									"id": "86d4ad73-19bf-4cab-a51e-db71a2e60812",
+									"name": "/verify/email",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "eyJhbGciOiJIUzI1NiJ9.eyJ0d29GYWN0b3JBdXRoZW50aWNhdGlvbiI6dHJ1ZSwiaXNFbWFpbFZlcmlmaWVkIjpmYWxzZSwiaXNNb2JpbGVWZXJpZmllZCI6ZmFsc2UsImlzRGVsZXRlZCI6ZmFsc2UsImF1dGhlbnRpY2F0b3JWZXJpZmllZCI6ZmFsc2UsIl9pZCI6IjYxNTA2MjdjNTViNTY2OWVkZjkyNzM1OCIsIm5hbWUiOiJIYXJyc2hhZCIsImVtYWlsIjoiaGFyc2hhZEByb3VuZHRlY2hzcXVhcmUuY29tIiwibW9iaWxlIjoiKzkxOTgyNDIwNTMzOSIsInBhc3N3b3JkIjoiJDJiJDEwJEpsa1FYREhpb1NHVkJtc25oZXV2dHU5NkpuVkFIa2ZMRHlEV2czbTFPOG85M3M1SmMwd05xIiwiY3JlYXRlZEF0IjoiMjAyMS0wOS0yNlQxMjowNzoyNC4xMTdaIiwidXBkYXRlZEF0IjoiMjAyMS0wOS0yNlQxMjowNzoyNC4xMTdaIiwiX192IjowfQ.-Ya0qAT_S_LVJSAGasqXUO_2g8k5U6GIiSFF_t1JpWU",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "code",
+													"value": "675213",
+													"type": "text"
+												}
+											]
+										},
+										"url": "{{local}}/auth/verify/email"
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "56"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"38-JA0zoxyBS+ISPuv7vkHcoo4ZY+Y\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 26 Sep 2021 12:08:24 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"status\": false,\n    \"message\": \"Enter Valid OTP\",\n    \"data\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "/user/referral",
+							"id": "38536eb4-0933-4320-bfd7-b94da5a640bb",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": "{{local}}user/profile/referral"
+							},
+							"response": [
+								{
+									"id": "a1801033-8654-4830-ba17-4fe185f27112",
+									"name": "/verify/email",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "eyJhbGciOiJIUzI1NiJ9.eyJ0d29GYWN0b3JBdXRoZW50aWNhdGlvbiI6dHJ1ZSwiaXNFbWFpbFZlcmlmaWVkIjpmYWxzZSwiaXNNb2JpbGVWZXJpZmllZCI6ZmFsc2UsImlzRGVsZXRlZCI6ZmFsc2UsImF1dGhlbnRpY2F0b3JWZXJpZmllZCI6ZmFsc2UsIl9pZCI6IjYxNTA2MjdjNTViNTY2OWVkZjkyNzM1OCIsIm5hbWUiOiJIYXJyc2hhZCIsImVtYWlsIjoiaGFyc2hhZEByb3VuZHRlY2hzcXVhcmUuY29tIiwibW9iaWxlIjoiKzkxOTgyNDIwNTMzOSIsInBhc3N3b3JkIjoiJDJiJDEwJEpsa1FYREhpb1NHVkJtc25oZXV2dHU5NkpuVkFIa2ZMRHlEV2czbTFPOG85M3M1SmMwd05xIiwiY3JlYXRlZEF0IjoiMjAyMS0wOS0yNlQxMjowNzoyNC4xMTdaIiwidXBkYXRlZEF0IjoiMjAyMS0wOS0yNlQxMjowNzoyNC4xMTdaIiwiX192IjowfQ.-Ya0qAT_S_LVJSAGasqXUO_2g8k5U6GIiSFF_t1JpWU",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "code",
+													"value": "675213",
+													"type": "text"
+												}
+											]
+										},
+										"url": "{{local}}/auth/verify/email"
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "56"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"38-JA0zoxyBS+ISPuv7vkHcoo4ZY+Y\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 26 Sep 2021 12:08:24 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"status\": false,\n    \"message\": \"Enter Valid OTP\",\n    \"data\": null\n}"
+								}
+							]
+						}
+					],
+					"id": "e8166f91-f1a9-4412-a035-329c760d618e"
+				},
+				{
+					"name": "/user/profile",
+					"id": "30ebae71-1a6b-457e-842c-df7396c06aad",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "harshad",
+									"type": "text"
+								},
+								{
+									"key": "userName",
+									"value": "ISNGW5",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "harshad@mailinator.com",
+									"type": "text"
+								},
+								{
+									"key": "profileImage",
+									"type": "file",
+									"src": "/Users/harshad-rk/Desktop/RTS/vikasCapital/vikascapital-frontend/src/images/app.png"
+								}
+							]
+						},
+						"url": "{{local}}user/profile"
+					},
+					"response": [
+						{
+							"id": "7726bfa4-c802-4ca1-8ed9-3500405d4eef",
+							"name": "/verify/email",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJ0d29GYWN0b3JBdXRoZW50aWNhdGlvbiI6dHJ1ZSwiaXNFbWFpbFZlcmlmaWVkIjpmYWxzZSwiaXNNb2JpbGVWZXJpZmllZCI6ZmFsc2UsImlzRGVsZXRlZCI6ZmFsc2UsImF1dGhlbnRpY2F0b3JWZXJpZmllZCI6ZmFsc2UsIl9pZCI6IjYxNTA2MjdjNTViNTY2OWVkZjkyNzM1OCIsIm5hbWUiOiJIYXJyc2hhZCIsImVtYWlsIjoiaGFyc2hhZEByb3VuZHRlY2hzcXVhcmUuY29tIiwibW9iaWxlIjoiKzkxOTgyNDIwNTMzOSIsInBhc3N3b3JkIjoiJDJiJDEwJEpsa1FYREhpb1NHVkJtc25oZXV2dHU5NkpuVkFIa2ZMRHlEV2czbTFPOG85M3M1SmMwd05xIiwiY3JlYXRlZEF0IjoiMjAyMS0wOS0yNlQxMjowNzoyNC4xMTdaIiwidXBkYXRlZEF0IjoiMjAyMS0wOS0yNlQxMjowNzoyNC4xMTdaIiwiX192IjowfQ.-Ya0qAT_S_LVJSAGasqXUO_2g8k5U6GIiSFF_t1JpWU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "code",
+											"value": "675213",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{local}}/auth/verify/email"
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-JA0zoxyBS+ISPuv7vkHcoo4ZY+Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 26 Sep 2021 12:08:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"status\": false,\n    \"message\": \"Enter Valid OTP\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "/user/profile",
+					"id": "1de75e65-13b9-4c29-b1af-5ce423f715b5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{local}}user/profile"
+					},
+					"response": [
+						{
+							"id": "ea7116e6-5e64-40b3-a434-5fef935bce53",
+							"name": "/verify/email",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJ0d29GYWN0b3JBdXRoZW50aWNhdGlvbiI6dHJ1ZSwiaXNFbWFpbFZlcmlmaWVkIjpmYWxzZSwiaXNNb2JpbGVWZXJpZmllZCI6ZmFsc2UsImlzRGVsZXRlZCI6ZmFsc2UsImF1dGhlbnRpY2F0b3JWZXJpZmllZCI6ZmFsc2UsIl9pZCI6IjYxNTA2MjdjNTViNTY2OWVkZjkyNzM1OCIsIm5hbWUiOiJIYXJyc2hhZCIsImVtYWlsIjoiaGFyc2hhZEByb3VuZHRlY2hzcXVhcmUuY29tIiwibW9iaWxlIjoiKzkxOTgyNDIwNTMzOSIsInBhc3N3b3JkIjoiJDJiJDEwJEpsa1FYREhpb1NHVkJtc25oZXV2dHU5NkpuVkFIa2ZMRHlEV2czbTFPOG85M3M1SmMwd05xIiwiY3JlYXRlZEF0IjoiMjAyMS0wOS0yNlQxMjowNzoyNC4xMTdaIiwidXBkYXRlZEF0IjoiMjAyMS0wOS0yNlQxMjowNzoyNC4xMTdaIiwiX192IjowfQ.-Ya0qAT_S_LVJSAGasqXUO_2g8k5U6GIiSFF_t1JpWU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "code",
+											"value": "675213",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{local}}/auth/verify/email"
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-JA0zoxyBS+ISPuv7vkHcoo4ZY+Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 26 Sep 2021 12:08:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"status\": false,\n    \"message\": \"Enter Valid OTP\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "/user/profile",
+					"id": "add46601-334b-4d82-92f1-8fadffae6ab4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{local}}user/profile"
+					},
+					"response": [
+						{
+							"id": "27c56031-172b-48e4-aeb4-2d69ce209236",
+							"name": "/verify/email",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJ0d29GYWN0b3JBdXRoZW50aWNhdGlvbiI6dHJ1ZSwiaXNFbWFpbFZlcmlmaWVkIjpmYWxzZSwiaXNNb2JpbGVWZXJpZmllZCI6ZmFsc2UsImlzRGVsZXRlZCI6ZmFsc2UsImF1dGhlbnRpY2F0b3JWZXJpZmllZCI6ZmFsc2UsIl9pZCI6IjYxNTA2MjdjNTViNTY2OWVkZjkyNzM1OCIsIm5hbWUiOiJIYXJyc2hhZCIsImVtYWlsIjoiaGFyc2hhZEByb3VuZHRlY2hzcXVhcmUuY29tIiwibW9iaWxlIjoiKzkxOTgyNDIwNTMzOSIsInBhc3N3b3JkIjoiJDJiJDEwJEpsa1FYREhpb1NHVkJtc25oZXV2dHU5NkpuVkFIa2ZMRHlEV2czbTFPOG85M3M1SmMwd05xIiwiY3JlYXRlZEF0IjoiMjAyMS0wOS0yNlQxMjowNzoyNC4xMTdaIiwidXBkYXRlZEF0IjoiMjAyMS0wOS0yNlQxMjowNzoyNC4xMTdaIiwiX192IjowfQ.-Ya0qAT_S_LVJSAGasqXUO_2g8k5U6GIiSFF_t1JpWU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "code",
+											"value": "675213",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{local}}/auth/verify/email"
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-JA0zoxyBS+ISPuv7vkHcoo4ZY+Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 26 Sep 2021 12:08:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"status\": false,\n    \"message\": \"Enter Valid OTP\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "/user/profile/kyc",
+					"id": "a546d1ba-c2cf-41c2-a9ce-aac7db13550e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mobile",
+									"value": "9913523827",
+									"type": "text"
+								},
+								{
+									"key": "documentType",
+									"value": "acard",
+									"type": "text"
+								},
+								{
+									"key": "documentName",
+									"value": "harshad",
+									"type": "text"
+								},
+								{
+									"key": "documentImage",
+									"type": "file",
+									"src": "/Users/harshad-rk/Desktop/RTS/vikasCapital/vikascapital-frontend/src/images/app.png"
+								},
+								{
+									"key": "documentNumber",
+									"value": "ht26492j20",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{local}}user/profile/kyc"
+					},
+					"response": [
+						{
+							"id": "58616429-a277-4133-9776-d5e49424b442",
+							"name": "/verify/email",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJ0d29GYWN0b3JBdXRoZW50aWNhdGlvbiI6dHJ1ZSwiaXNFbWFpbFZlcmlmaWVkIjpmYWxzZSwiaXNNb2JpbGVWZXJpZmllZCI6ZmFsc2UsImlzRGVsZXRlZCI6ZmFsc2UsImF1dGhlbnRpY2F0b3JWZXJpZmllZCI6ZmFsc2UsIl9pZCI6IjYxNTA2MjdjNTViNTY2OWVkZjkyNzM1OCIsIm5hbWUiOiJIYXJyc2hhZCIsImVtYWlsIjoiaGFyc2hhZEByb3VuZHRlY2hzcXVhcmUuY29tIiwibW9iaWxlIjoiKzkxOTgyNDIwNTMzOSIsInBhc3N3b3JkIjoiJDJiJDEwJEpsa1FYREhpb1NHVkJtc25oZXV2dHU5NkpuVkFIa2ZMRHlEV2czbTFPOG85M3M1SmMwd05xIiwiY3JlYXRlZEF0IjoiMjAyMS0wOS0yNlQxMjowNzoyNC4xMTdaIiwidXBkYXRlZEF0IjoiMjAyMS0wOS0yNlQxMjowNzoyNC4xMTdaIiwiX192IjowfQ.-Ya0qAT_S_LVJSAGasqXUO_2g8k5U6GIiSFF_t1JpWU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "code",
+											"value": "675213",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{local}}/auth/verify/email"
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-JA0zoxyBS+ISPuv7vkHcoo4ZY+Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 26 Sep 2021 12:08:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"status\": false,\n    \"message\": \"Enter Valid OTP\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "/user/profile/address",
+					"id": "befc76b0-025b-4a49-adc1-de8f56cab43c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"address\": {\n        \"bsc\": \"asdhklsadlasd\",\n        \"ethereum\": \"ads;lafmklasmflmkasdlf;s\",\n        \"polygon\" : \"jdcknasklcnlkad\",\n        \"tron\" : \"jnsakjnaks\" \n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{local}}user/profile/address"
+					},
+					"response": [
+						{
+							"id": "602fc0bb-e8c5-49ca-9f1e-2f47c7175ad7",
+							"name": "/verify/email",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJ0d29GYWN0b3JBdXRoZW50aWNhdGlvbiI6dHJ1ZSwiaXNFbWFpbFZlcmlmaWVkIjpmYWxzZSwiaXNNb2JpbGVWZXJpZmllZCI6ZmFsc2UsImlzRGVsZXRlZCI6ZmFsc2UsImF1dGhlbnRpY2F0b3JWZXJpZmllZCI6ZmFsc2UsIl9pZCI6IjYxNTA2MjdjNTViNTY2OWVkZjkyNzM1OCIsIm5hbWUiOiJIYXJyc2hhZCIsImVtYWlsIjoiaGFyc2hhZEByb3VuZHRlY2hzcXVhcmUuY29tIiwibW9iaWxlIjoiKzkxOTgyNDIwNTMzOSIsInBhc3N3b3JkIjoiJDJiJDEwJEpsa1FYREhpb1NHVkJtc25oZXV2dHU5NkpuVkFIa2ZMRHlEV2czbTFPOG85M3M1SmMwd05xIiwiY3JlYXRlZEF0IjoiMjAyMS0wOS0yNlQxMjowNzoyNC4xMTdaIiwidXBkYXRlZEF0IjoiMjAyMS0wOS0yNlQxMjowNzoyNC4xMTdaIiwiX192IjowfQ.-Ya0qAT_S_LVJSAGasqXUO_2g8k5U6GIiSFF_t1JpWU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "code",
+											"value": "675213",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{local}}/auth/verify/email"
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-JA0zoxyBS+ISPuv7vkHcoo4ZY+Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 26 Sep 2021 12:08:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"status\": false,\n    \"message\": \"Enter Valid OTP\",\n    \"data\": null\n}"
+						}
+					]
+				}
+			],
+			"id": "d7ecb463-c345-4e97-95bb-aab415d06e48"
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "auth",
+					"item": [
+						{
+							"name": "/register",
+							"id": "39aef055-d3df-4878-bc19-e318dcb02517",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "admin",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "admin@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123123",
+											"type": "text"
+										},
+										{
+											"key": "referral",
+											"value": "Ws3ykg",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": "{{local}}admin/auth/register"
+							},
+							"response": []
+						},
+						{
+							"name": "/login",
+							"id": "d4a49fc9-0fce-4cf2-b881-f9f092e2d7b6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "harshad",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "email",
+											"value": "admin@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123123",
+											"type": "text"
+										},
+										{
+											"key": "referral",
+											"value": "Ws3ykg",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": "{{local}}admin/auth/login"
+							},
+							"response": []
+						}
+					],
+					"id": "3e005d98-0d00-4194-a2aa-695de9d2abd9"
+				},
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "/list",
+							"id": "c2845a12-b898-4bad-8e2c-0a0ec2103672",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{local}}admin/user/list?page=1&sizePerPage=10",
+									"host": [
+										"{{local}}admin"
+									],
+									"path": [
+										"user",
+										"list"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "sizePerPage",
+											"value": "10"
+										},
+										{
+											"key": "search",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "kycStatus",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "startDate",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "endDate",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/:id",
+							"id": "84294c31-6495-4ec3-8b60-1aba68072a71",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{local}}admin/user/:id",
+									"host": [
+										"{{local}}admin"
+									],
+									"path": [
+										"user",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "e4a1fff7-c4d7-4bca-84b1-b994e8f80d73",
+											"key": "id",
+											"value": "63108a449db8ed69091bc85d"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/:id",
+							"id": "182308ad-6a96-44b3-924c-b497f080796b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "harshad",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "harshad@mailinator.com",
+											"type": "text"
+										},
+										{
+											"key": "isEmailVerified",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "allowReferral",
+											"value": "false",
+											"type": "text"
+										},
+										{
+											"key": "userName",
+											"value": "ISNGW5",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local}}admin/user/:id",
+									"host": [
+										"{{local}}admin"
+									],
+									"path": [
+										"user",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "e4a1fff7-c4d7-4bca-84b1-b994e8f80d73",
+											"key": "id",
+											"value": "63108a449db8ed69091bc85d"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/kyc/:id",
+							"id": "fee8ad6a-42d4-418c-ac2e-c2864ae62dbb",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "status",
+											"value": "APPROVED",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local}}admin/user/kyc/:id",
+									"host": [
+										"{{local}}admin"
+									],
+									"path": [
+										"user",
+										"kyc",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "32387df3-3d78-4b40-892f-27d8d2fac8db",
+											"key": "id",
+											"value": "63108a449db8ed69091bc85d"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/:id",
+							"id": "69994e49-a017-4a62-b3f7-40ff5af6a44a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{local}}admin/user/:id",
+									"host": [
+										"{{local}}admin"
+									],
+									"path": [
+										"user",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "e4a1fff7-c4d7-4bca-84b1-b994e8f80d73",
+											"key": "id",
+											"value": "63108a449db8ed69091bc85d"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/:id",
+							"id": "7f70a13c-9893-4443-b66c-04719cfa70d3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "fromUser",
+											"value": "63108a449db8ed69091bc85d",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local}}admin/user/move/referral/:id",
+									"host": [
+										"{{local}}admin"
+									],
+									"path": [
+										"user",
+										"move",
+										"referral",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "e4a1fff7-c4d7-4bca-84b1-b994e8f80d73",
+											"key": "id",
+											"value": "63108a449db8ed69091bc85d"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/password/:id",
+							"id": "1979baa4-6d42-4c08-b3f1-618d0a69e257",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "password",
+											"value": "123123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local}}admin/user/password/:id",
+									"host": [
+										"{{local}}admin"
+									],
+									"path": [
+										"user",
+										"password",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "32387df3-3d78-4b40-892f-27d8d2fac8db",
+											"key": "id",
+											"value": "63108a449db8ed69091bc85d"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "e1f84529-853b-4fd6-bea7-0969c126b1a2"
+				},
+				{
+					"name": "transaction",
+					"item": [
+						{
+							"name": "withdraw",
+							"item": [
+								{
+									"name": "/admin/transaction/:id",
+									"id": "ec27748b-f065-477a-b230-e9f23395c29e",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "{{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "txHash",
+													"value": "dsafdsfadsfadsfasdfasdfadsf",
+													"type": "text"
+												},
+												{
+													"key": "status",
+													"value": "1",
+													"description": "1 = confirm, 2 = reject",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{local}}admin/transaction/:id",
+											"host": [
+												"{{local}}admin"
+											],
+											"path": [
+												"transaction",
+												":id"
+											],
+											"variable": [
+												{
+													"id": "58e680e8-5a55-4db7-8339-6a621b17cf9c",
+													"key": "id",
+													"value": "6318fb52b4953f827f12bed1"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"id": "b64fbde6-500f-4056-a591-67b7dbfaffcc"
+						},
+						{
+							"name": "/admin/transaction",
+							"id": "bd11353b-c9fb-4158-9924-bc60e1540eac",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{local}}admin/transaction?page=1&sizePerPage=10",
+									"host": [
+										"{{local}}admin"
+									],
+									"path": [
+										"transaction"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "sizePerPage",
+											"value": "10"
+										},
+										{
+											"key": "type",
+											"value": "",
+											"type": "text",
+											"description": " \"DEPOSIT\",\n                \"WITHDRAW\",\n                \"REWARD\",\n                \"REFERRAL-INCOME\",\n                \"SYSTEM-REWARD\",\n                \"STAKE-IN\",\n                \"STAKE-OUT\",\n                \"STAKING-INTEREST\",\"INTERNAL-TRANSFER\"",
+											"disabled": true
+										},
+										{
+											"key": "chain",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "status",
+											"value": "",
+											"type": "text",
+											"description": "0, 1, 2",
+											"disabled": true
+										},
+										{
+											"key": "fromUserId",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "userId",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "startDate",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "endDate",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/admin/transaction/:id",
+							"id": "64413a47-50ef-4a41-9959-99e97739007e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{local}}admin/transaction/:id",
+									"host": [
+										"{{local}}admin"
+									],
+									"path": [
+										"transaction",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "58e680e8-5a55-4db7-8339-6a621b17cf9c",
+											"key": "id",
+											"value": "6318fb52b4953f827f12bed1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "d98c71a8-99c2-4d5f-ad37-cb42e365569c"
+				},
+				{
+					"name": "support",
+					"item": [
+						{
+							"name": "/support",
+							"id": "d07c29c7-1967-425d-96fc-164c0f0806b5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "status",
+											"value": "rejected",
+											"type": "text"
+										},
+										{
+											"key": "adminReplay",
+											"value": "sdhajdhjas askjdkas",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local}}admin/support/:id",
+									"host": [
+										"{{local}}admin"
+									],
+									"path": [
+										"support",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "4c9e3045-fca7-4213-b71a-69ca6e20717d",
+											"key": "id",
+											"value": "631b2399ff5dd28b5332de41"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/support",
+							"id": "0b360de3-557e-4def-9810-5b869dded631",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "status",
+											"value": "rejected",
+											"type": "text"
+										},
+										{
+											"key": "adminReplay",
+											"value": "sdhajdhjas askjdkas",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local}}admin/support?page=1&sizePerPage=10&status&startDate&endDate",
+									"host": [
+										"{{local}}admin"
+									],
+									"path": [
+										"support"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "sizePerPage",
+											"value": "10"
+										},
+										{
+											"key": "status",
+											"value": null,
+											"type": "text"
+										},
+										{
+											"key": "startDate",
+											"value": null,
+											"type": "text"
+										},
+										{
+											"key": "endDate",
+											"value": null,
+											"type": "text"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/support/:id",
+							"id": "68f1c8dd-b115-4168-9810-58a9bc797d8f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "status",
+											"value": "rejected",
+											"type": "text"
+										},
+										{
+											"key": "adminReplay",
+											"value": "sdhajdhjas askjdkas",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local}}admin/support/:id",
+									"host": [
+										"{{local}}admin"
+									],
+									"path": [
+										"support",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "319fabd5-8087-4355-a317-840ee48f4034",
+											"key": "id",
+											"value": "631b7fb1fa2aa038d1c61b80"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/support/:id",
+							"id": "d8759385-0f71-4adb-922b-5c0c8e6c3695",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "status",
+											"value": "rejected",
+											"type": "text"
+										},
+										{
+											"key": "adminReplay",
+											"value": "sdhajdhjas askjdkas",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local}}admin/support/:id",
+									"host": [
+										"{{local}}admin"
+									],
+									"path": [
+										"support",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "319fabd5-8087-4355-a317-840ee48f4034",
+											"key": "id",
+											"value": "631b7fb1fa2aa038d1c61b80"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "80e38aeb-61b1-472a-aa34-b16f320d5975"
+				}
+			],
+			"id": "962372e1-d39b-470c-86bc-dd63bdd6c0f1"
+		},
+		{
+			"name": "wallet",
+			"item": [
+				{
+					"name": "swap",
+					"item": [
+						{
+							"name": "/user/wallet/swap",
+							"id": "d5dfd6a7-6db7-4584-ae5a-bd54d841222a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "type",
+											"value": "BGT",
+											"type": "text",
+											"description": "BGT , BGUSD"
+										},
+										{
+											"key": "amount",
+											"value": "100",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{local}}user/wallet/swap"
+							},
+							"response": []
+						}
+					],
+					"id": "bb64bf98-8c2a-4d1b-b01e-11b3d6ed4a84"
+				},
+				{
+					"name": "withdraw",
+					"item": [
+						{
+							"name": "/user/wallet/swap",
+							"id": "4c602427-c60d-434c-97b6-1d1a028ad8c3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "amount",
+											"value": "0.001",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "0xB5AB4255cf3BBaFA5d2f2886d707604918E4D4Bf",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{local}}user/wallet/withdraw"
+							},
+							"response": []
+						}
+					],
+					"id": "fd02b284-77cc-412d-8e8d-e695a6eb4d1f"
+				},
+				{
+					"name": "/user/wallet/check",
+					"id": "68dcb5c2-78f3-4cec-9949-5dd94b8a85bd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "ethereum",
+									"type": "text",
+									"description": "ethereum, bsc, polygon, tron"
+								}
+							]
+						},
+						"url": "{{local}}user/wallet/check"
+					},
+					"response": []
+				},
+				{
+					"name": "/user/wallet",
+					"id": "889bc767-b621-4c19-bb27-14fd8e638aae",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{local}}user/wallet?page=1&sizePerPage=10",
+							"host": [
+								"{{local}}user"
+							],
+							"path": [
+								"wallet"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "sizePerPage",
+									"value": "10"
+								},
+								{
+									"key": "type",
+									"value": "",
+									"type": "text",
+									"description": " \"DEPOSIT\",\n                \"WITHDRAW\",\n                \"REWARD\",\n                \"REFERRAL-INCOME\",\n                \"SYSTEM-REWARD\",\n                \"STAKE-IN\",\n                \"STAKE-OUT\",\n                \"STAKING-INTEREST\",",
+									"disabled": true
+								},
+								{
+									"key": "chain",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/user/wallet:id",
+					"id": "fc6bb157-c84d-4561-b6a6-ceae25cbad76",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{local}}user/wallet/:id",
+							"host": [
+								"{{local}}user"
+							],
+							"path": [
+								"wallet",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "9125a4ca-e94e-4944-9c63-53d59a4a5263",
+									"key": "id",
+									"value": "6318fb52b4953f827f12bed1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/user/wallet/payment/address",
+					"id": "8910ae4f-9b0f-4ba8-a125-25c786d0de23",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{local}}user/wallet/payment/address"
+					},
+					"response": []
+				}
+			],
+			"id": "6065bb06-32d7-4808-93a5-22f76897980a"
+		},
+		{
+			"name": "staking",
+			"item": [
+				{
+					"name": "/user/staking",
+					"id": "24a60767-64ab-4665-a428-471119068894",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{local}}user/staking"
+					},
+					"response": []
+				},
+				{
+					"name": "/user/staking",
+					"id": "a1da6b94-c1ef-45be-8cee-15ccbeaf618d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJreWMiOnsic3RhdHVzIjoiUEVORElORyJ9LCJfaWQiOiI2MzFmMDQ4MjYwMTIyNzM0ZmNlNzA2YWEiLCJ1c2VyTmFtZSI6Ik5UWkxORSIsIm5hbWUiOiJoYXJzaGFkLXJrIiwiZW1haWwiOiJoYXJzaGFkMzJAZ21haWwuY29tIiwicmVmZXJyYWxDb2RlIjoiOFpaU0pJIiwicGFzc3dvcmQiOiIkMmIkMTAkLmE0NElCTTVPQ3lJU2VGdUkxdXY5ZWlRR0s3WThFNWZJVGhrZFpBTXlSR2pjUHBNcVpQa2kiLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImRlcG9zaXRBZGRyZXNzIjoiZmFsc2UiLCJhbGxvd1JlZmVycmFsIjp0cnVlLCJyb2xlIjoiVVNFUiIsImZyb21Vc2VyIjoiNjMxZWRiN2Q2ZDU0YTMxMzUxNGQ2YTYwIiwiZnJvbVVzZXJWaWV3IjoiNjMxZjAzNzE2MDEyMjczNGZjZTcwNTA4IiwiZnJvbVVzZXJWaWV3TGV2ZWwiOjEsImJhbGFuY2UiOjEwMDAsInN0YWtlZEJhbGFuY2UiOjAsInJld2FyZEJhbGFuY2UiOjAsInJlZmVycmFsQmFsYW5jZSI6MCwic3Rha2luZ1Jld2FyZEJhbGFuY2UiOjAsImlzRGVsZXRlZCI6ZmFsc2UsImNyZWF0ZWRBdCI6IjIwMjItMDktMTJUMTA6MDU6NTQuNjQzWiIsInVwZGF0ZWRBdCI6IjIwMjItMDktMTJUMTA6MTA6MDkuOTY3WiIsIl9fdiI6MH0.DGgASv1peA6HrFW1A4D66A5rHwxUQw4fPOH3FIBAG9s",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "plan",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "1000",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{local}}user/staking"
+					},
+					"response": []
+				}
+			],
+			"id": "924f364d-febc-4815-aca3-c6b136064666"
+		},
+		{
+			"name": "support",
+			"item": [
+				{
+					"name": "/support",
+					"id": "dd2ea784-a1ec-4755-9615-d21668a9dd72",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "deta for test",
+									"type": "text"
+								},
+								{
+									"key": "desc",
+									"value": "ksda adskad asoasmd daosdmowe wciowovckew vewiodvmeov weovindweov vewoiiewdvn eodwekcv ",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/Users/harshad-rk/Desktop/RTS/vikasCapital/vikascapital-frontend/src/images/app.png"
+								},
+								{
+									"key": "title",
+									"value": "demoa wds",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{local}}user/support"
+					},
+					"response": []
+				},
+				{
+					"name": "/support",
+					"id": "48df50a1-ae58-444b-a81e-9a421847b04a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{local}}user/support?page=1&sizePerPage=10",
+							"host": [
+								"{{local}}user"
+							],
+							"path": [
+								"support"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "sizePerPage",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/support/:id",
+					"id": "121d920b-5adc-47ad-8d83-ce6fc38b9ff6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{local}}user/support/:id",
+							"host": [
+								"{{local}}user"
+							],
+							"path": [
+								"support",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "631b2399ff5dd28b5332de41"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/support/:id",
+					"id": "96affcc1-9d4c-4440-862a-ce4b8c2b6970",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{local}}user/support/:id",
+							"host": [
+								"{{local}}user"
+							],
+							"path": [
+								"support",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "631b2399ff5dd28b5332de41"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/support/:id",
+					"id": "c4b926a1-2a23-4dd4-9375-dd7306c78abf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "status",
+									"value": "completed",
+									"type": "text",
+									"description": "\"completed\", \"pending\", \"rejected\", \"cancelled\""
+								}
+							]
+						},
+						"url": {
+							"raw": "{{local}}user/support/:id",
+							"host": [
+								"{{local}}user"
+							],
+							"path": [
+								"support",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "631b2399ff5dd28b5332de41"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "a592cd17-76cb-4c56-9547-135b18bfe2b9"
+		},
+		{
+			"name": "transfer",
+			"item": [
+				{
+					"name": "/user/find/:referralCode",
+					"id": "19378dae-4ee7-40e1-86eb-e17d1a1b1531",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{local}}user/profile/find/:referralCode",
+							"host": [
+								"{{local}}user"
+							],
+							"path": [
+								"profile",
+								"find",
+								":referralCode"
+							],
+							"variable": [
+								{
+									"id": "8c36a0fd-42b8-44cb-807b-7ac3239f9860",
+									"key": "referralCode",
+									"value": "DU5V17"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "c106aeb6-4844-47c5-82e4-76e0ee3fd3cc",
+							"name": "/verify/email",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJ0d29GYWN0b3JBdXRoZW50aWNhdGlvbiI6dHJ1ZSwiaXNFbWFpbFZlcmlmaWVkIjpmYWxzZSwiaXNNb2JpbGVWZXJpZmllZCI6ZmFsc2UsImlzRGVsZXRlZCI6ZmFsc2UsImF1dGhlbnRpY2F0b3JWZXJpZmllZCI6ZmFsc2UsIl9pZCI6IjYxNTA2MjdjNTViNTY2OWVkZjkyNzM1OCIsIm5hbWUiOiJIYXJyc2hhZCIsImVtYWlsIjoiaGFyc2hhZEByb3VuZHRlY2hzcXVhcmUuY29tIiwibW9iaWxlIjoiKzkxOTgyNDIwNTMzOSIsInBhc3N3b3JkIjoiJDJiJDEwJEpsa1FYREhpb1NHVkJtc25oZXV2dHU5NkpuVkFIa2ZMRHlEV2czbTFPOG85M3M1SmMwd05xIiwiY3JlYXRlZEF0IjoiMjAyMS0wOS0yNlQxMjowNzoyNC4xMTdaIiwidXBkYXRlZEF0IjoiMjAyMS0wOS0yNlQxMjowNzoyNC4xMTdaIiwiX192IjowfQ.-Ya0qAT_S_LVJSAGasqXUO_2g8k5U6GIiSFF_t1JpWU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "code",
+											"value": "675213",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{local}}/auth/verify/email"
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-JA0zoxyBS+ISPuv7vkHcoo4ZY+Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 26 Sep 2021 12:08:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"status\": false,\n    \"message\": \"Enter Valid OTP\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "/user/find/:referralCode",
+					"id": "a850e033-7e54-4594-a9ec-6e32cc90953f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "amount",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "toUserId",
+									"value": "6320842339d715305aa6d87c",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{local}}user/wallet/transfer"
+					},
+					"response": [
+						{
+							"id": "422e0ef8-6671-4d04-bafa-5c1baf33b965",
+							"name": "/verify/email",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJ0d29GYWN0b3JBdXRoZW50aWNhdGlvbiI6dHJ1ZSwiaXNFbWFpbFZlcmlmaWVkIjpmYWxzZSwiaXNNb2JpbGVWZXJpZmllZCI6ZmFsc2UsImlzRGVsZXRlZCI6ZmFsc2UsImF1dGhlbnRpY2F0b3JWZXJpZmllZCI6ZmFsc2UsIl9pZCI6IjYxNTA2MjdjNTViNTY2OWVkZjkyNzM1OCIsIm5hbWUiOiJIYXJyc2hhZCIsImVtYWlsIjoiaGFyc2hhZEByb3VuZHRlY2hzcXVhcmUuY29tIiwibW9iaWxlIjoiKzkxOTgyNDIwNTMzOSIsInBhc3N3b3JkIjoiJDJiJDEwJEpsa1FYREhpb1NHVkJtc25oZXV2dHU5NkpuVkFIa2ZMRHlEV2czbTFPOG85M3M1SmMwd05xIiwiY3JlYXRlZEF0IjoiMjAyMS0wOS0yNlQxMjowNzoyNC4xMTdaIiwidXBkYXRlZEF0IjoiMjAyMS0wOS0yNlQxMjowNzoyNC4xMTdaIiwiX192IjowfQ.-Ya0qAT_S_LVJSAGasqXUO_2g8k5U6GIiSFF_t1JpWU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "code",
+											"value": "675213",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{local}}/auth/verify/email"
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-JA0zoxyBS+ISPuv7vkHcoo4ZY+Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 26 Sep 2021 12:08:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"status\": false,\n    \"message\": \"Enter Valid OTP\",\n    \"data\": null\n}"
+						}
+					]
+				}
+			],
+			"id": "bb61bb0c-bcc7-4673-97c4-14c12d99283e"
+		}
+	]
+}

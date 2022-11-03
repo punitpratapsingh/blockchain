@@ -1,0 +1,37 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "BGT-staking - backend",
+    "main": "index.js",
+    "dependencies": {
+        "@mongoosejs/double": "^0.2.0",
+        "@sendgrid/mail": "^7.7.0",
+        "async": "^3.2.4",
+        "aws-sdk": "^2.1185.0",
+        "axios": "^0.27.2",
+        "bcrypt": "^5.0.1",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.1",
+        "express": "^4.18.1",
+        "express-fileupload": "^1.4.0",
+        "fireblocks-sdk": "^2.3.2",
+        "https": "^1.0.0",
+        "joi": "^17.6.0",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^6.5.4",
+        "mongoose-paginate-v2": "^1.6.3",
+        "nodemon": "^2.0.16",
+        "serverless": "^3.20.0",
+        "serverless-dotenv-plugin": "^4.0.1",
+        "serverless-http": "^3.0.1",
+        "serverless-offline": "^8.8.1",
+        "twilio": "^3.81.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon index.js",
+        "deploy": "serverless deploy"
+    },
+    "author": "Harshad-rk",
+    "license": "ISC"
+}

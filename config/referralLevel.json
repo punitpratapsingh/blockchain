@@ -1,0 +1,57 @@
+[
+    {
+        "level": 1,
+        "bonus": 6,
+        "target": 0
+    },
+    {
+        "level": 2,
+        "bonus": 2,
+        "target": 50
+    },
+    {
+        "level": 3,
+        "bonus": 1.5,
+        "target": 125
+    },
+    {
+        "level": 4,
+        "bonus": 1.5,
+        "target": 250
+    },
+    {
+        "level": 5,
+        "bonus": 1,
+        "target": 500
+    },
+    {
+        "level": 6,
+        "bonus": 1,
+        "target": 1000
+    },
+    {
+        "level": 7,
+        "bonus": 1,
+        "target": 1850
+    },
+    {
+        "level": 8,
+        "bonus": 1,
+        "target": 3200
+    },
+    {
+        "level": 9,
+        "bonus": 1,
+        "target": 5500
+    },
+    {
+        "level": 10,
+        "bonus": 1,
+        "target": 10000
+    },
+    {
+        "level": 11,
+        "bonus": 1,
+        "target": 0
+    }
+]
